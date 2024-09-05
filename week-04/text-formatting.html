@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text formatting</title>
+  </head>
+
+  <body id="page-top">
+    <!-- HTML headings are defined with the "h1" to "h6" tags. Each important
+      website should have "h1" tag due to SEO. -->
+    <h1>Basic text formatting in HTML</h1>
+
+    <h3>Text tags</h3>
+    <!-- To create a comment in the code that only developer(s) can see simply
+      text your comment, leave the cursor on the comment line(s) and press
+      CTRL + / (on Windows). -->
+
+    <p>
+      To add a paragraph in your HTML code, you should use the "p" tag. This
+      will display the text "This is a paragraph" in a separate block on your
+      webpage.
+    </p>
+
+    <p>As default the paragraph is created on the new line.</p>
+
+    <p>
+      The text tags will automatically strip all extra spaces at the beginning,
+      between, and at the end of the words/sentence. To adjust the text to our
+      needs we will use CSS language later on.
+    </p>
+
+    <p>To add some extra spacing between HTML elements you can use "br" tag</p>
+
+    <!-- Visual break between the lines. -->
+    <br />
+    <br />
+
+    <p>
+      As you can see some extra space between this a above paragraph was add.
+    </p>
+
+    <!-- Use HTML "span" tag for in-line text. -->
+    <span>What about in-line text? Simply use "span" tag.</span>
+    <span>
+      It doesn't matter how many span you will place in the code bellow each
+      other, they will always appear in-line nex to each other.
+    </span>
+
+    <p>
+      Span can be used within a paragraph.
+      <span>
+        Like here. Remember that to use "p" tag inside the span is not
+        convenient.
+      </span>
+    </p>
+
+    <b>What about to make some text in bold?</b>
+    <i>Or italic?</i>
+    <span>
+      As you can see bold and italic elements are in-line elements as well as
+      span.
+    </span>
+
+    <p>
+      Of corse you can use <b>bold text</b> or <i>italic text</i> inside the
+      paragraph.
+      <span>
+        You can use <b>bold</b> and <i>italic</i> text within the "span" tag
+        too.
+      </span>
+    </p>
+
+    <!-- The text that has been deleted from a document. -->
+    <del>
+      The HTML "del" element defines text that has been deleted from a document.
+      Browsers will usually strike a line through deleted text.
+    </del>
+
+    <!-- The text that has been inserted into a document. -->
+    <ins>
+      The HTML "ins" element defines a text that has been inserted into a
+      document. Browsers will usually underline inserted text.
+    </ins>
+
+    <p>Use horizontal line, "hr" tag to visually divide web page.</p>
+
+    <!-- Horizontal line. -->
+    <hr />
+
+    <h3>What about visual disability and the text in HTML?</h3>
+    <p>
+      Screen Reader apps for the people with visual disability will often
+      require "strong" and "em" tags in order for the voice to stress those
+      words properly.
+    </p>
+
+    <strong>
+      The "strong" tag is used to define text with strong importance. The
+      content inside is typically displayed in bold.
+    </strong>
+
+    <br />
+    <br />
+
+    <em>
+      The "em" tag is used to define emphasized text. The content inside is
+      typically displayed in italic.
+    </em>
+
+    <!-- Now its a time to create your second web page on your own. -->
+
+    <h3>Links</h3>
+    <h4>Bookmarks / Internal links</h4>
+
+    <!-- The "a" link tag stands for Anchor.  -->
+    <!-- The most important attribute of the "a" element is the href attribute, which indicates the link's destination. -->
+    <a href="#page-top">Scroll Up</a>
+
+    <br />
+
+    <a href="#chapter-04">
+      This is a bookmark / internal link to the Chapter 04
+    </a>
+
+    <h4>External links</h4>
+    <a href="./second-page.html">
+      Second Page - this is a link to another html document
+    </a>
+
+    <br /><br /><br /><br /><br />
+
+    <hr />
+
+    <!-- The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document. -->
+    <p id="chapter-01">This is a dummy text for chapter 01.</p>
+    <p id="chapter-02">This is a dummy text for chapter 02.</p>
+    <p id="chapter-03">This is a dummy text for chapter 03.</p>
+    <p id="chapter-04">This is a dummy text for chapter 04.</p>
+  </body>
+</html>

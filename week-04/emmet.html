@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Emmet</title>
+      </head>
+      <body>
+        <!-- Comment CTRL + / -->
+
+        <!-- p -->
+        <p></p>
+
+        <!-- br -->
+        <br />
+
+        <!-- br*3 -->
+        <br /><br /><br />
+
+        <!-- ul>li -->
+        <ul>
+          <li></li>
+        </ul>
+
+        <!-- ul>li*5 -->
+        <ul>
+          <li>01</li>
+          <li>02</li>
+          <li>03</li>
+          <li>04</li>
+          <li>05</li>
+        </ul>
+
+        <!-- div#chapter01 -->
+        <div id="chapter01"></div>
+
+        <!-- span.inline -->
+        <span class="inline"></span>
+
+        <!-- p.bold-text -->
+        <p class="bold-text"></p>
+
+        <!-- img.center#cat -->
+        <img src="" alt="" class="center" id="cat" />
+
+        <!-- a{Item} -->
+        <a href="">Item</a>
+
+        <!-- ul>li*3>a{Item} -->
+        <ul>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </ul>
+
+        <!-- div>h3{Chapter three}+p{Random text} -->
+        <div>
+          <h3>Chapter three</h3>
+          <p>Random text</p>
+        </div>
+
+        <!-- nav>ul>li*3>a.nav-bar{Item $} -->
+        <nav>
+          <ul>
+            <li><a href="" class="nav-bar">Item 1</a></li>
+            <li><a href="" class="nav-bar">Item 2</a></li>
+            <li><a href="" class="nav-bar">Item 3</a></li>
+          </ul>
+        </nav>
+
+        <!-- main>section#about>p{Random Text}^section#service -->
+        <main>
+          <section id="about">
+            <p>Random Text</p>
+          </section>
+          <section id="service"></section>
+        </main>
+
+        <!-- div.article>h3{Chapter 05}+p{Random text}+ul>li*2{Item} -->
+        <div class="article">
+          <h3>Chapter 05</h3>
+          <p>Random text</p>
+          <ul>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </div>
+
+        <!-- div+p{text} -->
+        <div></div>
+        <p>text</p>
+
+        <!-- F2 / fn + F2 -->
+        <ol>
+          <li>Item A</li>
+          <li>Item B</li>
+          <li>Item C</li>
+          <li>Item D</li>
+        </ol>
+
+        <!-- CTRL + SHIFT + P - Wrap Emmet -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit <span>amet consectetur</span> adipisicing
+            elit. Hic laboriosam illo velit dignissimos repellat! Eos, ipsa
+            inventore. Esse porro natus, ad earum quis perferendis sint
+            <strong>quasi</strong> exercitationem libero maxime deserunt.
+          </p>
+        </div>
+
+        <!-- span[style=color:red;] -->
+        <p>
+          Lorem ipsum, dolor sit
+          <span style="color: red">amet</span> consectetur adipisicing elit.
+          Accusamus fuga quia, quae aliquam a, soluta iure reprehenderit quidem
+          sit voluptatem quam minus quaerat expedita quo. Magni nemo molestias
+          id unde.
+        </p>
+
+        <!-- main>header>nav>ul>li*3>a{item$}^^^^article#01>section>h2{This is
+    Headline}+p{Just a simple text here.}^^aside>h3{Categories}+nav>ul>li*3>a{item$}[target="_blank"]^^^^footer>div.social-media>a*3{item$}>img^^nav>ul>li*3>a{item$} -->
+
+        <main>
+          <header>
+            <nav>
+              <ul>
+                <li><a href="">item1</a></li>
+                <li><a href="">item2</a></li>
+                <li><a href="">item3</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article id="01">
+            <section>
+              <h2>This is Headline</h2>
+              <p>Just a simple text here.</p>
+            </section>
+          </article>
+          <aside>
+            <h3>Categories</h3>
+            <nav>
+              <ul>
+                <li><a href="" target="_blank">item1</a></li>
+                <li><a href="" target="_blank">item2</a></li>
+                <li><a href="" target="_blank">item3</a></li>
+              </ul>
+            </nav>
+          </aside>
+          <footer>
+            <div class="social-media">
+              <a href="">item1<img src="" alt="" /></a>
+              <a href="">item2<img src="" alt="" /></a>
+              <a href="">item3<img src="" alt="" /></a>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="">item1</a></li>
+                <li><a href="">item2</a></li>
+                <li><a href="">item3</a></li>
+              </ul>
+            </nav>
+          </footer>
+        </main>
+      </body>
+    </html>
+  </body>
+</html>
