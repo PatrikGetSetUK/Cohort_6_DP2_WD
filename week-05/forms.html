@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <h2>Input fields</h2>
+
+    <form>
+        <input type="text" placeholder="Enter a text" minlength="2" maxlength="20" required><br>
+
+        <input type="number" placeholder="Enter a number" min="0" max="100" step="5"><br>
+
+        <!-- https://regexr.com/3e48o -->
+        <input type="email" placeholder="name@company.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"><br>
+
+        <input type="tel" placeholder="0123456789"><br>
+
+        <input type="password" required autocomplete="off"><br>
+
+        <input type="search" placeholder="Search"><br>
+
+        <input type="date"><br>
+
+        <input type="file"><br>
+
+        <p>and way more...</p>
+    </form>
+
+    <h2>Label</h2>
+    <form>
+        <label for="firstName">First name:</label>
+        <br>
+        <input type="text" name="firstName" id="fName" placeholder="John" minlength="2" maxlength="30" required>
+        <br>
+    </form>
+
+    <form>
+        <label>
+            Favourite fruit:
+            <br>
+            <input type="text" placeholder="Apple">
+        </label>
+    </form>
+
+    <h2>Select one of the options</h2>
+    <form>
+        <input type="radio" name="coding_language" id="english" value="English" checked>
+        <label for="english">English</label><br>
+
+        <input type="radio" name="coding_language" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" name="coding_language" id="javascript" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <h2>Check multiple options</h2>
+    <form>
+        <input type="checkbox" name="czech" id="czech" value="Czech">
+        <label for="czech">I am Czech.</label><br>
+
+        <input type="checkbox" name="checked-true" id="checked-true" value="Checked-true" checked>
+        <label for="checked-true">I am checked.</label><br>
+
+        <input type="checkbox" name="czech-checked" id="czech-checked" value="Czech-checked">
+        <label for="czech-checked">I am checked by Czech.</label><br>
+    </form>
+
+    <h2>Form with dropdown select options / dropdown list</h2>
+    <p>The dropdown form select option is NOT a dropdown menu! Don't use it for a menu navigation!</p>
+
+    <form>
+        <label for="coding-language">Choose a coding language:</label>
+        <select name="coding-language" id="coding-language">
+            <option value="none">---</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+    </form>
+
+
+    <h2>Form example</h2>
+    <form name="myForm">
+        <label for="first-name">First name:</label>
+        <br>
+        <input type="text" id="first-name" name="first-name" placeholder="John" required minlength="2" maxlength="30">
+        <br>
+
+        <label for="surname">Last name:</label>
+        <br>
+        <input type="text" id="surname" name="surname" placeholder="Smith" required minlength="2" maxlength="30">
+        <br>
+        <br>
+
+        <input type="reset" value="Reset">
+        <input type="button" value="Send">
+    </form>
+
+    <h2>Exercise&mdash;Recreate the form.</h2>
+    <h3>Holiday reservation</h3>
+
+    <!-- Your code here -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+table {
+  /* Border for te entire table */
+  border: 2px solid #ddd;
+
+  /* Make the table fill its container / width of screen. */
+  width: 100%;
+
+  /* Set a fixed height for the table */
+  height: 150px;
+
+  /* Collapse borders between cells */
+  border-collapse: collapse;
+
+  /* No space between cells */
+  border-spacing: 0;
+
+  /* Add horizontal scrollbar if content overflows */
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  /* Add padding around content in cells */
+  padding: 5px;
+}
+
+tr:hover {
+  background-color: #b9b9b9;
+}
+
+th {
+  background-color: #f2f2f2;
+}

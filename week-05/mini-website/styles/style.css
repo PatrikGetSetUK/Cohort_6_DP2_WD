@@ -1,0 +1,21 @@
+section {
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.copyrights {
+  color: gray;
+  font-size: small;
+  text-align: center;
+  padding: 8px;
+}
+
+#ship {
+  color: chocolate;
+}

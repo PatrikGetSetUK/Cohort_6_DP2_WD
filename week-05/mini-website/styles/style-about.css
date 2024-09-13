@@ -1,0 +1,12 @@
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+}
+
+.bg-green {
+  background-color: green;
+}
