@@ -1,0 +1,47 @@
+/* Cyprian */
+/* ul li:nth-child(3) {
+  background-color: lightgreen;
+}
+
+p:nth-child(1) {
+  color: blue;
+}
+
+p:nth-child(3) {
+  color: blue;
+}
+
+.img {
+  background-color: blue;
+} */
+
+/* Vivian */
+/* nav>ul>:nth-child(3){
+    background-color: blue;
+}
+ 
+main>section>:nth-child(3){
+    background-color: blue;
+}
+ 
+main>section>:nth-child(5){
+    background-color: blue;
+}
+ 
+footer>p{
+    background-color: blue;
+}
+  */
+
+/* Patrik */
+ul li:nth-child(3) {
+  background-color: blue;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+footer p {
+  background-color: blue;
+}

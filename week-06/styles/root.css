@@ -1,0 +1,60 @@
+:root {
+  /* Variables */
+  /* Colors */
+  --color-bg: red;
+  --color-body-text: green;
+  --color-heading: orange;
+  --color-transparent: rgba(0, 0, 0, 0.5);
+  --color-links: gray;
+
+  /* Fonts */
+  --font-heading-main: "Courier New", Courier, monospace;
+  --font-body-text: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  --font-links: Arial, Helvetica, sans-serif;
+  --font-default: Arial, Helvetica, sans-serif;
+
+  /* Spacing */
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-x-lg: 50px;
+}
+
+body {
+  font-family: var(--font-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading-main);
+  color: var(--color-heading);
+  background-color: var(--color-bg);
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+p,
+span,
+li,
+small,
+button {
+  font-family: var(--font-body-text);
+  color: var(--color-body-text);
+}
+
+a {
+  font-family: var(--font-links);
+  color: var(--color-links);
+}

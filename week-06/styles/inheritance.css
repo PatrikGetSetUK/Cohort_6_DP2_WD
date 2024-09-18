@@ -1,0 +1,17 @@
+.parent {
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.child {
+  background-color: yellow;
+  padding: 50px;
+  border: inherit;
+}
+
+.child p {
+  border: reset;
+}
