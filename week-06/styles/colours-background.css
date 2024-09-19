@@ -1,0 +1,96 @@
+.wrapper {
+  background-color: blue;
+  color: white;
+  border: 2px solid red;
+  box-shadow: 0 0 20px #ff0000;
+  outline: 3px solid #9dff00;
+}
+
+.bg-gradient-linear {
+  height: 5rem;
+
+  background: rgb(131, 58, 180);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
+.bg-gradient-radial {
+  height: 5rem;
+
+  background: rgb(238, 174, 202);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+
+.bg-pattern {
+  height: 10rem;
+
+  background: radial-gradient(circle, transparent 25%, #ffffff 26%),
+    linear-gradient(
+      45deg,
+      transparent 46%,
+      #bfbfbf 47%,
+      #bfbfbf 52%,
+      transparent 53%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 46%,
+      #bfbfbf 47%,
+      #bfbfbf 52%,
+      transparent 53%
+    );
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.bg-img {
+  height: 50rem;
+  border: 1px solid black;
+
+  background-color: gray;
+  background-image: url("../images/background-cover.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+body {
+  background-color: lightgreen;
+  background-image: url("../images/background-cover-body.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

@@ -1,0 +1,58 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.shop {
+  background-color: #f8f8f8;
+  background-image: radial-gradient(#c8c8c8 1.05px, #f8f8f8 1.05px);
+  background-size: 21px 21px;
+  padding: 5px;
+}
+
+.card {
+  max-width: 300px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 5px lightgray;
+  margin: 50px auto;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+}
+
+.info {
+  padding: 0 16px 32px 16px;
+  margin-top: -60px;
+}
+
+.coffee-type {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.info button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  color: white;
+  background-color: #2e9576;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+
+  padding: 8px 16px;
+  text-transform: capitalize;
+}
