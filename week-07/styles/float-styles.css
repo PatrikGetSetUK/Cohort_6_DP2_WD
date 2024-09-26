@@ -1,0 +1,21 @@
+.container {
+  height: 200px;
+  min-width: 400px;
+  background-color: lightblue;
+  margin: 1em;
+}
+
+.container p {
+  max-height: 10em;
+  line-height: 1.2em;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.left-side {
+  float: left;
+}
+
+.right-side {
+  float: right;
+}
