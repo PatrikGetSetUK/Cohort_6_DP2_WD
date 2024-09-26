@@ -1,0 +1,42 @@
+/* Helper */
+* {
+  outline: 1px solid red;
+}
+
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: side-menu;
+}
+
+.main {
+  grid-area: main-content;
+}
+
+.aside {
+  grid-area: advertisement;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "side-menu  .               header          header          .               advertisement"
+    "side-menu  main-content    main-content    main-content    main-content    advertisement"
+    "footer     footer          footer          footer          footer          advertisement";
+  gap: 0.5rem;
+
+  background-color: midnightblue;
+  padding: 0.5rem;
+}
+
+.grid-container > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 0.5rem;
+}
