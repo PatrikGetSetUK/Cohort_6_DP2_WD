@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Consumption Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label,
+        input,
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Car Consumption Calculator</h1>
+
+        <label for="distance">Distance traveled (km):</label>
+        <input type="number" name="distance" id="distance" min="0" step="0.1" required>
+
+        <label for="fuel">Fuel used (liters):</label>
+        <input type="number" name="fuel" id="fuel" min="0" step="0.1" required>
+
+        <button onclick="calculateConsumption()">Calculate Consumption</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateConsumption() {
+            const distance = document.getElementById("distance").value;
+            const fuel = document.getElementById("fuel").value;
+
+            if (distance <= 0 || fuel <= 0) {
+                alert("Please enter valid values for distance and fuel.");
+                return;
+            }
+
+            const consumption = (fuel / distance) * 100;
+            document.getElementById("result").innerHTML = consumption;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+/* Variables */
+:root {
+  /* Colors */
+  --color-primary: black;
+  --color-secondary: blue;
+  --color-accent: red;
+
+  /* Fonts */
+  --font-default: Arial, Helvetica, sans-serif;
+  --font-headings: "Arial";
+  --font-body-tet: "Arial";
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Set root font-size for rem to 62.5% to change the font-size default value to 10px. */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  scrollbar-width: none;
+  overflow-x: hidden;
+
+  /* Typography reset */
+  /* Set font-size back to it's original 16px by using 1.6rem. */
+  font-size: 1.6rem;
+  font-family: var(--font-default);
+}
+
+/* Images reset */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography - Mobile */
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.067;
+  letter-spacing: -0.05rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.083;
+  letter-spacing: -0.0375rem;
+}
+
+p,
+span,
+li,
+a,
+button {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.015625rem;
+}
+
+.display-1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.125rem;
+}
+
+.display-2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+}
+
+.display-3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+.display-4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+/* #1.0 Resnsive webpage tample */
+/* #1.1 For mobiles */
+.container-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  padding: 3rem;
+  margin: 2rem;
+}
+
+header {
+  background-color: darkorange;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  background-color: darkgreen;
+  color: white;
+  padding: 1rem;
+}
+
+/* #1.2 For tablets & desktop */
+@media only screen and (min-width: 600px) {
+  .container-responsive {
+    flex-direction: row;
+  }
+}
