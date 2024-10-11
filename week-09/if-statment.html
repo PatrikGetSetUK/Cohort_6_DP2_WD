@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting page</title>
+</head>
+
+<body>
+    <h1 id="greet">👉Greeting will appear here.👈</h1>
+
+    <form>
+        <label for="time">Enter the time:</label><br>
+        <input type="number" name="time" id="hours" min="0" max="23" step="1" autofocus value="12">
+
+        <span>:00</span>
+
+        <br><br>
+
+        <input type="button" value="Greet me!" onclick="greetMe()">
+    </form>
+
+    <script>
+        function greetMe() {
+            const inHours = document.getElementById("hours").value;
+            let answer = "Good ";
+
+            //     8    < 12  "Good " + "morning." >> "Good morning."
+            if (inHours < 12) { answer = answer + "morning." }
+            else if (inHours < 18) { answer = answer + "afternoon." }
+            else { answer = answer + "evening." }
+
+            if (inHours < 0 || inHours > 23) {
+                answer = "You entered incorrect hours!";
+                document.getElementById("hours").value = 12;
+            }
+
+            document.getElementById("greet").innerHTML = answer;
+        }
+    </script>
+</body>
+
+</html>

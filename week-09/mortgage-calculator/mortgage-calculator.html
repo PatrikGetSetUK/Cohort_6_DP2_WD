@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="./style-mortgage-calculator.css">
+</head>
+
+<body>
+    <h2>Mortgage Calculator</h2>
+    <form id="mortgageForm">
+        <label for="principal">Loan Amount (£):</label>
+        <br>
+        <input type="number" id="principal" required>
+        <br>
+        <label for="interestRate">Interest Rate (%):</label>
+        <br>
+        <input type="number" id="interestRate" step="0.01" required>
+        <br>
+        <label for="loanTerm">Loan Term (years):</label>
+        <br>
+        <input type="number" id="loanTerm" required>
+        <br>
+        <button type="button" onclick="calculateMortgage()">Calculate Mortgage</button>
+    </form>
+
+    <div id="result"></div>
+
+    <hr>
+
+    <div class="formula">
+        <h3>Calculate Mortgage Payment:</h3>
+        <p>It calculates the monthly mortgage payment using the formula for mortgage payment:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mi>M</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>P</mi>
+                            <mo>&#8290;</mo>
+                            <mi>r</mi>
+                            <mo>&#8290;</mo>
+                            <mo stretchy="false">(</mo>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mi>r</mi>
+                            <mo stretchy="false">)</mo>
+                            <msup>
+                                <mi>n</mi>
+                                <mo>&#8290;</mo>
+                            </msup>
+                        </mrow>
+                        <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mi>r</mi>
+                            <mo stretchy="false">)</mo>
+                            <msup>
+                                <mi>n</mi>
+                                <mo>&#8290;</mo>
+                            </msup>
+                            <mo>&#8722;</mo>
+                            <mn>1</mn>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </math>
+        </p>
+        <p>Where:</p>
+        <ul>
+            <li><strong>P</strong> is the principal amount.</li>
+            <li><strong>r</strong> is the monthly interest rate.</li>
+            <li><strong>n</strong> is the total number of monthly payments (loan term in years multiplied by 12).</li>
+        </ul>
+    </div>
+
+    <script src="./script-mortgage-calculator.js"></script>
+</body>
+
+</html>

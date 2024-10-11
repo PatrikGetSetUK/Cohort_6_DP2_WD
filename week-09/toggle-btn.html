@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button</title>
+
+    <style>
+        .highlight {
+            background-color: yellowgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="conten">
+        <p>This is a paragraph.</p>
+        <button id="highlightBtn">Highlight</button>
+    </div>
+
+    <script>
+        // Inputs
+        const highlightBtn = document.getElementById("highlightBtn");
+        const paragraph = document.querySelector('p');
+
+        // Logic & Output
+        highlightBtn.addEventListener('click', () => {
+            paragraph.classList.toggle('highlight');
+        });
+    </script>
+</body>
+
+</html>

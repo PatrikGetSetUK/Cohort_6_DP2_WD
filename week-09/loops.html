@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <h1>Loops</h1>
+
+    <script>
+        // For loop
+        // Repeat 5 times "Hello World!"
+        for (let i = 0; i < 5; i++) {
+            console.log("Hello World!")
+        }
+
+        // Display the index number of the loop 10 times.
+        // 0
+        // 1
+        // 2
+        // 3
+        // 4
+        // 5
+        // 6
+        // 7
+        // 8
+        // 9
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        // Create following patter:
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        // Solution 1
+        for (let x = 1; x <= 6; x++) {
+
+            let ch = "";
+            for (let y = 0; y < x; y++) {
+                ch += "*";
+            }
+            console.log(ch);
+
+        }
+
+        // Solution 2
+        for (let x = 1; x <= 6; x++) {
+            console.log("*".repeat(x));
+        }
+
+
+        // Create following patter:
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+        // Solution 1
+        for (let x = 5; x >= 1; x--) {
+
+            let ch = "";
+            for (let y = 0; y < x; y++) {
+                ch += "*";
+            }
+
+            console.log(ch);
+        }
+
+        // Solution 2
+        for (let x = 5; x >= 1; x--) {
+            console.log("*".repeat(x));
+        }
+
+
+        // Foreach Loop
+        const numbers = [1, 2, 5, 10, 60];
+
+        numbers.forEach(number => {
+            console.log(number + 2);
+        });
+
+
+        // Create an array with 5 names. Display all the names in the console and add "Hi" to them.
+        // Example: Patrik >> Hi Patrik
+        const names = ["Patrik", "Jane", "Tom", "Bob", "Monika"];
+
+        names.forEach(name => {
+            console.log("Hi", name, "!");
+            // console.log("Hi " + name);
+        });
+    </script>
+</body>
+
+</html>

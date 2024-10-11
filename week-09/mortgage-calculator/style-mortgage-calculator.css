@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.formula {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}

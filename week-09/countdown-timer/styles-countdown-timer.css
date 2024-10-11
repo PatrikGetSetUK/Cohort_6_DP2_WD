@@ -1,0 +1,17 @@
+.contdown-timer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 15rem;
+  margin: 2rem;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time h2 {
+  margin: 0;
+}
