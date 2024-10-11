@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- To create a responsive website, add the following <meta> tag has to be included to all your web pages. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tomorrowland festival</title>
+
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Description of your webpage">
+    <meta name="keywords" content="Keywords for your webpage">
+    <meta name="author" content="Your name">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Your Webpage Title" />
+    <meta property="og:description" content="Description of your webpage" />
+    <meta property="og:image" content="URL to your webpage's image" />
+    <meta property="og:url" content="URL of your webpage" />
+
+    <meta name="twitter:title" content="Your Webpage Title" />
+    <meta name="twitter:description" content="Description of your webpage" />
+    <meta name="twitter:image" content="URL to your webpage's image" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Link to external CSS file. -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header id="page-top">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/tomorrowland-logo.webp" alt="logo">
+            </a>
+            <p>20-year anniversary</p>
+        </div>
+
+        <!-- Navigation top-bar -->
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+        </ul>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+        <!-- Hero image section -->
+        <section class="hero-image">
+
+            <div class="hero-text">
+                <h1>Our Story</h1>
+                <p>October 18, Amsterdam. A magical spectacle brought by the Symphony
+                    of Unity Orchestra and a secret artist line-up.</p>
+                <button type="button">TICKETS & INFO</button>
+            </div>
+
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <h2>About</h2>
+            <a href="./index.html">
+                <img src="./images/tomorrowland-logo.webp" alt="logo" class="main-logo">
+            </a>
+
+            <p>Live Today, Love Tomorrow, Unite Forever. Tomorrowland is the best
+                festival experience you'll ever encounter. Tomorrowland is immensely thankful and honoured to have
+                returned to Brazil. Together, we have encountered challenging times, and we are still heartbroken that
+                we couldn't welcome all of you. Live Today, Love Tomorrow, Unite Forever.
+            </p>
+
+            <!-- This is video from YouTube. -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3Lr_5zOFTNs?si=DMZdez0utrbU6Xkj"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Events section -->
+        <section id="events">
+            <h2>Events</h2>
+
+            <!-- Carousel start -->
+            <div class="carousel-container">
+                <!-- Image slides -->
+                <div class="carousel-slide">
+                    <img src="./images/slideshow1.webp" alt="Stage 1">
+                    <img src="./images/slideshow2.webp" alt="Stage 2">
+                    <img src="./images/slideshow3.webp" alt="Stage 3">
+                </div>
+
+                <!-- Carousel navigation -->
+                <div class="carousel-navigation">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+
+                <!-- Bullet points indicators -->
+                <div class="carousel-bullets">
+                    <span class="bullet"></span>
+                    <span class="bullet"></span>
+                    <span class="bullet"></span>
+                </div>
+            </div>
+            <script src="./scripts/script-carousel.js"></script>
+            <!-- Carousel end -->
+        </section>
+
+        <!-- News section -->
+        <section id="news">
+            <h2>News</h2>
+
+            <!-- Cards wrapper / container -->
+            <div class="cards">
+
+                <!-- Card -->
+                <div class="card">
+                    <img src="./images/card-image-01.webp" alt="music band">
+
+                    <div class="info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <button type="button" onclick="alert('Card clicked!')">Read more</button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="card">
+                    <img src="./images/card-image-02.webp" alt="music band">
+
+                    <div class="info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <button type="button" onclick="alert('Card clicked!')">Read more</button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="card">
+                    <img src="./images/card-image-03.webp" alt="music band">
+
+                    <div class="info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <button type="button" onclick="alert('Card clicked!')">Read more</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tickets section -->
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>
+                With your <strong>Tomorrowland Account</strong>, you have exclusive
+                Early-Access to the <strong>Pre-Sale</strong> on <strong>April 18, 2024</strong>, to purchase Tickets
+                at
+                a reduced price before the start of the General Sale.
+            </p>
+            <button type="button">BUY TICKETS</button>
+        </section>
+
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <!-- Social media icons -->
+        <ul class="social-media-icons">
+            <li class="social-icon">
+                <a href="#">
+                    <img src="./images/icon-facebook.svg" alt="Facebook">
+                </a>
+            </li>
+
+            <li class="social-icon">
+                <a href="#">
+                    <img src="./images/icon-instagram.svg" alt="Instagram">
+                </a>
+            </li>
+
+            <li class="social-icon">
+                <a href="#">
+                    <img src="./images/icon-linkedin.svg" alt="LinkedIn">
+                </a>
+            </li>
+
+            <li class="social-icon">
+                <a href="#">
+                    <img src="./images/icon-twitter.svg" alt="Twitter">
+                </a>
+            </li>
+        </ul>
+
+        <!-- Legal links in the footer. -->
+        <p>
+            <!-- ALT 124 >> |  -->
+            <a href="#">legal</a> |
+            <a href="#">cookies</a> |
+            <a href="#">site map</a> |
+            <a href="#page-top" class="button-back-top">back to top &#11014;</a>
+        </p>
+
+        <!-- Copyrights -->
+        <p class="rights">&copy; 2024 Tomorrowland. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
+
+</html>
